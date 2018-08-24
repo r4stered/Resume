@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \documentclass[]{deedy-resume-openfont}
+
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Drew}{Raymond Williams}{williams.r.drew@gmail.com | 631-398-8085 | Vestal, NY | jreneew2.github.io}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+\runsubsection{SUNY University at Buffalo}\descript{| BS Computer Science}\hfill \location{Buffalo, NY | August 2016 - May 2020}\\
+GPA: 3.0\\
+Relevant Courses: Intro to Algorithms (In Progress), Computer Organization, Digital Systems, Data Structures, Intro to Computer Science I \& II, Computer Science Seminar 
+\sectionsep \\
+
+\runsubsection{Vestal High School}\descript{| Scholars Diploma}\hfill \location{Vestal, NY | September 2012 - June 2016}\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work Experience}
+\runsubsection{Lockheed Martin}\descript{| Software Engineering Intern}\hfill \location{Owego, NY | June 2018 – August 2018}
+\begin{tightemize}
+	\item Helped fixed software bugs in mail sorting system and wrote scripts to automatically change large configuration files.
+	\item Tested Mail Imaging System as well as fixed broken tests to be updated with newest release. Allowed team to catch up to orginal release time.
+\end{tightemize}
+\sectionsep
+\runsubsection{Lockheed Martin}\descript{| Software Engineering Intern}\hfill \location{Owego, NY | June 2017 – August 2017}
+\begin{tightemize}
+	\item Created a C\# application to help users verify software versions and dependencies by importing CSV file and verifying characters limits, duplicates, etc.
+	\item Ran software verification procedures on graphics boards for formal testing.
+	\item Worked on a team with other interns to design, build and program a fully autonomous robot based on requirements given to us at the start of the internship.
+\end{tightemize}
+\sectionsep
+\runsubsection{Lockheed Martin}\descript{| Enterprise Business Services Intern}\hfill \location{Owego, NY | June 2016 – August 2016}
+\begin{tightemize}
+	\item Created a web application that tracks user’s requests for new devices such as laptops and phones in order to decrease load on managers.
+	\item Usage of SQL queries and databases to pull data into C\# backend.
+	\item Created a Tableau dashboard to see usage statistics for different projects.
+	\item Worked with a team of interns and supervisors to present project to stakeholders.
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{tabular}{ l l }
+	\descript{Experienced In:} & {\location{Java, C++, C\#}} \\
+	\descript{Familiar With:} & {\location{Python, HTML, CSS, Javascript, SQL}} \\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Projects
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extracurricular Activity}
+\raggedright
+
+\runsubsection{\large{Lockheed Martin Code Quest \textbar{} Team Member}}
+\\
+• Solved complex coding problems with other students and learned to parse files for data values and file I/O.\\
+\sectionsep
+  
+
+\runsubsection{\large{First Robotics Competition Team 2053 Tigertronics \textbar {} Alumni and Mentor}}
+\\
+• Software Team Lead in implementation ofreal time control, PID loops, vision system, and motion control feedback loops. \\
+• Engaged in fundraising and public relation activities including a presentation at New York State Technology Educators Conference and Union Endicott Elementary School presentations.\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Awards
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards}
+\runsubsection{\large{3rd Place}} \descript{Lockheed Martin Code Quest | April 2016} \\
+
+\sectionsep
+\runsubsection{\large{Innovation in Control Award}} \descript{Pittsburgh FIRST Robotics Competition | March 2016} \\
+
+\sectionsep
+\ 
+\end{document}

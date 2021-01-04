@@ -1,75 +1,19 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a modified ONE COLUMN version of
-% the following template:
-%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \documentclass[]{deedy-resume-openfont}
+\documentclass[]{deedy-resume-openfont}
 
-    \begin{document}
-    
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Profile
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
 \namesection{Drew}{Raymond Williams}{williams.r.drew@gmail.com | 631-398-8085 | Binghamton, NY | drewwilliams.dev}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Experience
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
 \runsubsection{Lockheed Martin}\descript{|  Software Engineering Asc.}\hfill \location{Owego, NY | June 2020 – Present}
 \begin{tightemize}
 	\item Added different alerts to helicopter display system.
 	\item Created test cases for new helicopter communication system.
-	\item Working in a team of three to review different requirements for new helicopter communication system.
+	\item Created multiple database models and views for displaying data for configuration management application.
+	\item Changed GUI elements of web application to better suit customers needs.
 \end{tightemize}
 \sectionsep
+
 \runsubsection{First Robotics Team 2053}\descript{| Alumni and Mentor}\hfill \location{Endicott, NY | September 2012 – Present}
 \begin{tightemize}
 	\item Lead a small team of students to program a robot while teaching them about software engineering.
@@ -78,59 +22,39 @@
 	\item Created a GUI application in JavaFX to visualize paths for the robot to follow as well as export them to the robot.
 \end{tightemize}
 \sectionsep
-\runsubsection{Lockheed Martin}\descript{| Software Engineering Intern}\hfill \location{Owego, NY | June 2019 – August 2019}
+
+\runsubsection{Lockheed Martin}\descript{| Software Engineering Intern}\hfill \location{Owego, NY} \\
+\descript{June 2019 - August 2019}
 \begin{tightemize}
 	\item Automated user migration from legacy server to SharePoint system using C\# for long range defense radar.
 	\item Mocked-up new SharePoint site using HTML and CSS to customer specifications.
 	\item Used internal REST API to automate population of Excel files and save our team 20 hours of work.
 	\item Refactored old C\# ASP.NET web application and added documentation to increase code readability.
-	%\item Added functionality to automatically update user's groups according to Excel file from web application.
 \end{tightemize}
-\sectionsep
-\runsubsection{Lockheed Martin}\descript{| Software Engineering Intern}\hfill \location{Owego, NY | June 2018 – August 2018}
+\descript{June 2018 - August 2018}
 \begin{tightemize}
 	\item Created a script to automatically generate configuration files that saved developers two days of work a year on USPS Mail Sorting System.
 	\item Isolated a bug in vendor's software for conveyor belt and communicated with them to fix the bug and update the program. This allowed the team to add more hardware interfaces without overflowing. 
 	\item Pinpointed a networking bug in software / hardware interface and updated configuration to fix it.
-	%\item Found and fixed a loop offset bug in a package sorting system while improving code readability.
 \end{tightemize}
-\sectionsep
-\runsubsection{Lockheed Martin}\descript{| Software Engineering Intern}\hfill \location{Owego, NY | June 2017 – August 2017}
+\descript{June 2017 - August 2017}
 \begin{tightemize}
 	\item Created a C\# application to help users verify software versions and dependencies on US Navy helicopter by importing CSV files and verifying characters limits, duplicates, etc.
 	\item Ran software verification procedures on Air Force graphics boards for formal testing. Verified output on screen as well as console output.
-	%\item Worked on a team with other interns to design, build and program a fully autonomous robot to compete against other interns in a challenge. 
 \end{tightemize}
-\sectionsep
-\runsubsection{Lockheed Martin}\descript{| Enterprise Business Services Intern}\hfill \location{Owego, NY | June 2016 – August 2016}
+\descript{June 2016 - August 2016}
 \begin{tightemize}
 	\item Created an internal web application that tracks user’s requests for new devices such as laptops and phones in order to decrease load on managers.
 	\item Used SQL queries and databases to pull data into C\# backend.
 	\item Created a Tableau dashboard to see usage statistics for different projects.
-	%\item Worked with a team of interns and supervisors to present project to stakeholders.
 \end{tightemize}
 \sectionsep
 \hrulefill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Education
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Education}
 \raggedright
-
 \runsubsection{SUNY University at Buffalo}\descript{| BS Computer Science}\hfill \location{Buffalo, NY | August 2016 - May 2020}\\
-Relevant Courses: Advanced Networking Concepts, Programming Languages, Robotics Algorithms, Blockchain App Development, Software Engineering, Operating Systems, Theory of Computation, Software Quality In Practice, Intro to Algorithms, Data Structures, Computer Science Seminar 
-\sectionsep \\
 
-\runsubsection{Vestal High School}\descript{| Scholars Diploma}\hfill \location{Vestal, NY | September 2012 - June 2016}\\
-\sectionsep
-\hrulefill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Skills
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 \raggedright
 \begin{tabular}{ l l }
